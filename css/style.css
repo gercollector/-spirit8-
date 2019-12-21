@@ -1,29 +1,19 @@
 * {
-    padding: 0;
     margin: 0;
-}
-
-html {
-    font-size: 10px;
-    scroll-behavior: smooth;
-}
-
-body {
-    font-family: 'Open Sans', sans-serif;
-    color: #222222;
-}
-
-h2 {
-    text-transform: uppercase;
+    padding: 0;
 }
 
 a, a:hover {
     text-decoration: none;
 }
 
+body {
+    font-family: 'Open Sans', sans-serif;
+}
+
 header {
-    position: absolute;
     width: 100%;
+    position: absolute;
     padding-top: 20px;
 }
 
@@ -31,103 +21,39 @@ nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    font-family: Lato, sans-serif;
-    font-weight: bold;
 }
 
 .logo {
-    font-size: 2.4rem;
+    font-weight: bold;
+    font-size: 20px;
     text-transform: uppercase;
-    color: #ffffff;
-    transition: .4s;
+    color: #80bdff;
 }
+
 .logo:hover {
-    color: #fcac45;
+    color: white;
 }
+
 .menu {
     margin: 0;
 }
 
 .menu .menu-list-item {
     display: inline-block;
-    font-size: 14px;
-    margin-left: 27px;
     text-transform: uppercase;
+    margin-left: 20px;
 }
 
-.menu-list-item a {
-    position: relative;
+.menu .menu-list-item a {
     color: #ffffff;
+    font-weight: bold;
 }
 
-.menu-list-item a:hover:before {
-    content: '';
-    position: absolute;
-    width: calc(50% + 10px);
-    border: 2px solid #292929;
-    bottom: -20px;
-    left: -10px;
-}
+/*######################## HERO ##########################*/
 
-.menu-list-item a:hover:after {
-    content: '';
-    position: absolute;
-    width: calc(50% + 10px);
-    border: 2px solid #fcac45;
-    bottom: -20px;
-    right: -10px;
-}
-
-.mobile-btn {
-    width: 45px;
-    height: 40px;
-    align-items: center;
-    display: none;
-}
-
-.mobile-btn span {
-    display: inline-block;
-    width: 100%;
-    height: 3px;
-    background: #d17e32;
-    position: relative;
-    z-index: 10;
-}
-
-.mobile-btn span:before, .mobile-btn span:after {
-    content: "";
-    position: absolute;
-    display: inline-block;
-    width: 100%;
-    height: 100%;
-    background: #d17e32;
-    transition: .2s;
-}
-
-.show span {
-    background: transparent;
-}
-
-.mobile-btn span:before {
-    transform: translateY(-10px);
-}
-
-.mobile-btn span:after {
-    transform: translateY(10px);
-}
-
-.show span:before {
-    transform: translateY(0) rotate(-45deg);
-}
-
-.show span:after {
-    transform: translateY(0) rotate(45deg);
-}
-
-/*#################### HERO ##########################*/
 #hero {
-    background: #222222;
     height: 100vh;
+    background: #222222;
 }
 
 .hero-content {
@@ -136,420 +62,40 @@ nav {
 }
 
 .top-title {
-    color: #999999;
-    font-size: 4.4rem;
+    font-size: 3rem;
+    text-transform: uppercase;
+    color: #ffffff;
 }
 
 .top-title span {
-    color: #fcac45;
+    color: #80bdff;
 }
 
 .text-description {
-    font-size: 2rem;
     color: #ffffff;
 }
 
-.arrow {
-    margin: 180px auto 0;
-    width: 40px;
-    height: 40px;
-    border: 1px solid #ffffff;
-    border-radius: 50%;
-    transition: .5s;
-}
+/*######################## HERO ##########################*/
 
-.arrow svg {
-    margin-top: 13px;
-}
+/*######################## ABOUT #########################*/
 
-.arrow:hover {
-    background: #999999;
-    border: 1px solid #ffffff;
-}
-
-/*#################### HERO ##########################*/
-
-/*################### КОНТЕНТ #######################*/
 #about .container {
-    padding-top: 100px;
-}
-
-#about .container .row h3 {
-    font-family: "Open Sans", sans-serif;
-    font-size: 20px;
-    text-transform: uppercase;
-    color: #636363;
-}
-
-#about .container .row h2 {
-    font-family: "Open Sans", sans-serif;
-    font-size: 34px;
-    text-transform: uppercase;
-    margin-bottom: 21px;
-}
-
-#about .container .row span {
-    font-weight: bold;
-}
-
-.line {
-    margin-bottom: 55px;
-}
-
-.line:before {
-    content: '';
-    position: absolute;
-    width: 100px;
-    height: 3px;
-    border: 2px solid #fcac45;
-}
-
-#about .container .row p {
-    font-family: "Open Sans", sans-serif;
-    font-size: 18px;
-    color: #636363;
-}
-
-#about .container .row p svg {
-    margin-right: 10px;
-}
-
-#about .container .row a {
-    margin-top: 55px;
-    width: 195px;
-    height: 45px;
-    font-family: "Open Sans", sans-serif;
-    font-size: 12px;
-    font-weight: bold;
-    text-transform: uppercase;
-    color: #636363;
-    border: 1px solid #636363;
-    transition: .3s;
-}
-
-#about .container .row a:hover {
-    border-radius: 15px;
-    background: #fcac45;
-}
-
-#about a svg {
-    margin-right: 10px;
-}
-
-/*###################### КОНТЕНТ ##########################*/
-
-/*####################### КОМАНДА ###########################*/
-
-#team {
-    background: #070707;
-    color: #ffffff;
-    padding: 90px 0 150px;
-    text-align: center;
-}
-
-.title {
-    font-size: 44px;
-    text-align: center;
-    font-weight: 300;
-    position: relative;
-}
-
-.title:before {
-    content: '';
-    position: absolute;
-    bottom: -20px;
-    right: 0;
-    left: 0;
-    margin: auto;
-    width: 100px;
-    border: 2px solid #fcac45;
-}
-
-.title:after {
-    content: '';
-    position: absolute;
-    bottom: -40px;
-    right: 0;
-    left: 0;
-    margin: auto;
-    width: 68px;
-    border: 2px solid #fcac45;
-}
-
-#team .title {
-    margin-bottom: 140px;
-}
-
-.title span {
-    font-weight: 600;
-}
-
-.team-item img {
-    width: 128px;
-    height: 128px;
-    object-fit: cover;
-    border-radius: 50%;
-}
-
-.team-member {
-    font-size: 2rem;
-    font-weight: 700;
-    margin-top: 22px;
-}
-
-.member-spec {
-    font-size: 16px;
-}
-
-.member-description {
-    margin-top: 35px;
-    font-size: 14px;
-}
-
-/*####################### КОМАНДА ###########################*/
-
-/*################ SERVICES #################*/
-
-#services {
-    text-align: center;
-    padding: 80px 0;
-}
-
-.section-description {
-    font-style: italic;
-    font-size: 16px;
-    color: #6c6c6c;
-    margin-top: 85px;
-}
-
-.service-item .svg {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin: 100px auto 0;
-    border: 4px solid #fcac45;
-    border-radius: 50%;
-    width: 110px;
-    height: 110px;
-}
-
-.services-title {
-    font-family: "Open Sans", sans-serif;
-    font-size: 25px;
-    font-weight: 700;
-    text-transform: uppercase;
-    margin-top: 25px;
-}
-
-.services-description {
-    font-family: "Open Sans", sans-serif;
-    font-size: 14px;
-    font-weight: 300;
-}
-
-/*################ SERVICES #################*/
-
-/*################ CLIENTS ###################*/
-
-#clients {
-    background: #070707;
-    color: #ffffff;
-    padding: 90px 0 150px;
-    text-align: center;
-}
-
-.clients-item {
-    margin: 140px 0 0;
-}
-
-#clients .clients-item svg {
-    margin-right: 30px;
-}
-
-/*################ CLIENTS ###################*/
-
-/*################## TESTIMONIALS ##################*/
-
-#testimonials {
-    background: #070707;
-    color: #ffffff;
-    padding: 90px 0 150px;
-    text-align: center;
-}
-
-.testimonials-text {
-    margin-top: 150px;
-    font-size: 18px;
-    font-weight: 500;
-    text-transform: uppercase;
-}
-
-.testimonials-description {
-    margin-top: 50px;
-    font-size: 18px;
-    font-weight: 500;
-}
-
-.testimonials-description span {
-
-}
-
-/*################## TESTIMONIALS ##################*/
-
-/*################## WORK ######################*/
-#work {
-    padding: 100px 0;
-    text-align: center;
-}
-
-.filter {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    font-weight: 600;
-    font-size: 18px;
-}
-
-.filter-type {
-    text-transform: uppercase;
-}
-
-.filter-list li {
-    display: inline-block;
-    font-weight: 400;
-}
-
-.filter-list a {
-    color: #6c6c6c;
-}
-
-.filter-list li:after {
-    content: '|';
-    margin: 0 10px;
-}
-
-.filter-list li:last-child:after {
-    content: '';
-    margin: 0;
-}
-
-.portfolio-item {
-    position: relative;
-    overflow: hidden;
-    margin-top: 30px;
-}
-
-.hover-text {
-    position: absolute;
-    height: 100%;
-    width: 100%;
-    left: 0;
-    bottom: -238px;
-    background: #222;
-    color: #fff;
-    padding: 25% 0;
-    transition: all 0.6s;
-}
-
-.portfolio-item:hover .hover-text {
-    bottom: 0;
-}
-
-.hover-text h4 {
-    font-weight: 500;
-    font-size: 20px;
-    margin: 10px 0;
-    text-transform: uppercase;
-}
-
-.hover-text p {
-    font-size: 14px;
-    color: #b2b2b2;
-}
-
-.hover-text i {
-    height: 30px;
-    width: 30px;
-    border: 1px solid #fcac45;
-    font-size: 20px;
-    padding: 4px;
-    border-radius: 50%;
-    color: #fcac45;
-}
-
-/*################## WORK ######################*/
-
-/*################## CONTACT #######################*/
-
-#contact {
-    margin: 100px 0;
-    text-align: center;
-}
-
-.white-description {
-    margin: 90px 0;
-    color: #808080;
-    font-size: 16px;
-    font-style: italic;
-}
-
-.contact-form label {
-    color: #828282;
-    font-size: 14px;
-}
-
-.contact-form label span {
-    color: red;
-}
-
-.contact-form input.form-control {
-    height: 40px;
-    margin-bottom: 35px;
-}
-
-.contact-form .form-control {
-    border-radius: 0;
-}
-
-.contact-form .btn {
-    margin-top: 30px;
-    border: none;
-    background-color: #fcac45;
-    color: #ffffff;
-    font-size: 14px;
-    text-transform: uppercase;
-    padding: 8px 62px;
-    float: right;
-}
-
-/*################## CONTACT #######################*/
-
-/*################### FOOTER ########################*/
-
-footer {
-    background: #000000;
+    border-radius: 40px;
+    background: #222222;
     color: white;
-    padding: 40px 0;
 }
 
-.social-icons li {
-    display: inline-block;
-    margin-right: 12px;
-}
-
-.social-icons li a {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    color: white;
-    border: 2px solid #b0b0b0;
-    width: 30px;
-    height: 30px;
-    border-radius: 50%;
-}
-
-.social-text span {
+.text-about {
+    text-align: center;
+    margin-top: 40px;
     font-weight: bold;
+    font-size: 2.5rem;
+    text-transform: uppercase;
+    color: #ffffff;
 }
 
-/*################### FOOTER ########################*/
+.text-about span {
+    color: #80bdff;
+}
+
+/*######################## ABOUT #########################*/
